@@ -418,7 +418,12 @@ img {
 
 a {
   text-decoration: none;
-  color: #335c85; }
+  color: #335c85;
+  -webkit-transition: all 200ms;
+  transition: all 200ms; }
+  a em {
+    -webkit-transition: all 300ms;
+    transition: all 300ms; }
   a:hover {
     text-decoration: underline;
     color: #c90; }
@@ -464,8 +469,6 @@ h2 {
   padding: 1em 0; }
   .site-title a {
     display: block;
-    -webkit-transition: all 200ms;
-    transition: all 200ms;
     margin: 0 auto;
     background-image: url("https://cdn.rawgit.com/wp-portugal/wcporto2018/master/site/dist/images/logo-text-white.svg");
     background-repeat: no-repeat;
@@ -547,21 +550,26 @@ h2 {
           content: ''; }
     .main-navigation .menu > li {
       display: inline-block; }
-      .main-navigation .menu > li:first-child a::before {
-        content: ''; }
-      .main-navigation .menu > li > a::before {
-        margin-right: .75em;
+      .main-navigation .menu > li::before {
+        float: left;
         color: #b3c2d1;
+        padding: 2em .5em 2em 0;
         content: '|'; }
+      .main-navigation .menu > li:first-child::before {
+        content: ''; }
       .main-navigation .menu > li a {
         display: block;
-        -webkit-transition: color 300ms;
-        transition: color 300ms;
+        float: left;
         padding: 1.5em .5em 1.5em 0;
         text-transform: uppercase;
         color: #036; }
+        .main-navigation .menu > li a em {
+          display: block;
+          color: #8099b3; }
         .main-navigation .menu > li a:hover {
           color: #c90; }
+          .main-navigation .menu > li a:hover em {
+            color: #c90; }
           .main-navigation .menu > li a:hover + .sub-menu {
             display: block; }
       .main-navigation .menu > li.menu-item-has-children {
@@ -842,8 +850,6 @@ article.post, article.page {
   line-height: 1.125;
   font-size: 2.5em; }
   .entry-title a {
-    -webkit-transition: all 300ms;
-    transition: all 300ms;
     color: inherit; }
     .entry-title a:hover {
       color: #335c85; }
@@ -852,8 +858,6 @@ article.post, article.page {
     font-size: .875em;
     font-weight: 300; }
     .entry-title + .entry-meta a {
-      -webkit-transition: color 300ms;
-      transition: color 300ms;
       color: #d6ad33; }
       .entry-title + .entry-meta a:hover {
         color: #c90; }
@@ -913,8 +917,6 @@ article.post, article.page {
 
 .entry-content a,
 .comment-content a {
-  -webkit-transition: color 300ms;
-  transition: color 300ms;
   color: #c90; }
   .entry-content a:hover,
   .comment-content a:hover {
@@ -1124,8 +1126,6 @@ article.post, article.page {
         width: calc(100% / 4); } }
     #after-header-widgets .widget a {
       display: block;
-      -webkit-transition: all 200ms;
-      transition: all 200ms;
       padding: .25em 0;
       font-size: 2em; }
     #after-header-widgets .widget span {
@@ -1234,8 +1234,6 @@ article.post, article.page {
   padding-bottom: .5em;
   line-height: 1.5; }
   .widget li a {
-    -webkit-transition: color 300ms;
-    transition: color 300ms;
     color: #335c85; }
     .widget li a:hover {
       color: #c90; }
