@@ -1,26 +1,30 @@
 var gulp = require('gulp'),
-	plugins = require('gulp-load-plugins')({
-		'rename' : {
-			'gulp-util' : 'gutil',
-		}
-	});
+	plugins = require('gulp-load-plugins')();
 
 // A single variable to hold all the paths
 var paths = {
+	'images' : ['./assets/images/**/*.*'],
 	'styles' : ['./assets/scss/**/*.scss'],
 };
+
+// Compress images
+gulp.task('images', function() {
+	'use strict';
+	return gulp.src(paths.images)
+		.pipe(plugins.plumber())
+		.pipe(plugins.imagemin())
+		.pipe(gulp.dest('dist/images'))
+		.pipe(plugins.notify({
+			'message' : 'Images compressed',
+			'onLast'  : true
+		}));
+});
 
 // Compile and minify SCSS files
 gulp.task('styles', function() {
 	'use strict';
 	return gulp.src(paths.styles)
-		.pipe(plugins.plumber(
-			function(err) {
-				plugins.gutil.log(plugins.gutil.colors.red( 'Error on ' + err.plugin + '\n' + err.messageFormatted ) );
-				plugins.gutil.beep();
-				this.emit('end');
-			}
-		))
+		.pipe(plugins.plumber())
 		.pipe(plugins.sass({
 			'includePaths' : require('node-normalize-scss').with('./assets/scss/style.scss')
 		}))
@@ -40,12 +44,14 @@ gulp.task('styles', function() {
 // Live update these files
 gulp.task('watch', function() {
 	'use strict';
+	gulp.watch(paths.images, ['images']);
 	gulp.watch(paths.styles, ['styles']);
 	plugins.livereload.listen();
 	gulp.watch(['./dist/**/*']).on('change', plugins.livereload.changed);
 });
 
 gulp.task('default', [
+	'images',
 	'styles',
 	'watch'
 ]);
