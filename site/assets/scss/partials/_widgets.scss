@@ -8,7 +8,7 @@
 		max-width: $max-width-l;
 	}
 
-	&:after {
+	&::after {
 		display: table;
 		clear: both;
 		content: '';
@@ -27,7 +27,6 @@
 			display: block;
 			transition: all 200ms;
 			padding: .25em 0;
-			font-family: $font-highlight;
 			font-size: 2em;
 		}
 
@@ -35,45 +34,45 @@
 			display: block;
 			margin: .5em;
 			text-align: center;
-			color: $color-set-3-2;
+			color: $bright-color-2;
 		}
 
 		&:nth-child(1) {
 			a {
-				background-color: $color-set-1;
+				background-color: $dark-color;
 
 				&:hover {
-					background-color: $color-set-4;
+					background-color: $bright-color;
 				}
 			}
 		}
 
 		&:nth-child(2) {
 			a {
-				background-color: $color-set-1-1;
+				background-color: $dark-color-1;
 
 				&:hover {
-					background-color: $color-set-4;
+					background-color: $bright-color;
 				}
 			}
 		}
 
 		&:nth-child(3) {
 			a {
-				background-color: $color-set-1-2;
+				background-color: $dark-color-2;
 
 				&:hover {
-					background-color: $color-set-4;
+					background-color: $bright-color;
 				}
 			}
 		}
 
 		&:nth-child(4) {
 			a {
-				background-color: $color-set-1-3;
+				background-color: $dark-color-3;
 
 				&:hover {
-					background-color: $color-set-4;
+					background-color: $bright-color;
 				}
 			}
 		}
@@ -89,7 +88,7 @@
 			display: block;
 			transition: all 300ms;
 			margin: 0 auto;
-			box-shadow: 0 0 12px transparentize($color-set-1-1, .9);
+			box-shadow: 0 0 12px transparentize($dark-color-1, .9);
 			cursor: pointer;
 
 			&:hover {
@@ -106,7 +105,7 @@
 #primary-sidebar {
 	.widget {
 		margin: 0 0 3.5em;
-		background: url('//2016.porto.wordcamp.org/files/2016/02/divider-widget.png') 50% 100% no-repeat;
+		background: url('https://github.com/wp-portugal/wcporto2018/site/dist/images/logo-simple-color.svg') 50% 100% no-repeat;
 		background-size: 2em;
 		padding-bottom: 3.5em;
 	}
@@ -149,7 +148,7 @@
 .widget {
 
 	h4 {
-		background-color: $color-set-1;
+		background-color: $dark-color;
 		padding: 1em;
 		text-transform: uppercase;
 		color: $white;
@@ -174,7 +173,7 @@
 
 	.widget-title {
 		margin: 0 0 .75em;
-		border-bottom: 1px solid $color-set-1-2;
+		border-bottom: 1px solid $dark-color-2;
 		padding: 0 0 .75em;
 		text-transform: uppercase;
 		font-family: 'Roboto', sans-serif;
@@ -184,24 +183,23 @@
 
 	li {
 		margin: 0 0 .5em;
-		border-bottom: 1px solid $color-set-1-2;
+		border-bottom: 1px solid $dark-color-2;
 		padding-bottom: .5em;
 		line-height: 1.5;
 
 		a {
 			transition: color 300ms;
-			text-decoration: none;
-			color: $color-set-1-1;
+			color: $dark-color-1;
 
 			&:hover {
-				color: $color-set-4;
+				color: $bright-color;
 			}
 		}
 	}
 
 	.porto-edicao-especial {
 		h4 {
-			background-color: $color-set-4;
+			background-color: $bright-color;
 		}
 
 		img {
@@ -243,17 +241,16 @@
 
 #footer-widgets {
 	margin: 0 auto;
-	padding: 1.125em;
 	max-width: $max-width;
 
-	@media only screen and (min-width: $size-l) {
-		max-width: $max-width-l;
-	}
-
-	&:after {
+	&::after {
 		display: table;
 		clear: both;
 		content: '';
+	}
+
+	@media only screen and (min-width: $size-l) {
+		max-width: $max-width-l;
 	}
 }
 

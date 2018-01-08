@@ -4,14 +4,14 @@
 ----------------------------------------------- */
 .site-header {
 	margin-bottom: 7.5em;
-	border-top: .5em solid $color-set-1-1;
-	box-shadow: inset 0 10px 60px transparentize($color-set-1-1, .5);
-	background: $color-set-1-1 url('//2016.porto.wordcamp.org/files/2016/02/24565032872_d5502119fc_o.jpg') 50% 100% no-repeat;
+	border-top: .5em solid $dark-color-1;
+	box-shadow: inset 0 10px 60px transparentize($dark-color-1, .5);
+	background: $dark-color-1 url('https://2018.porto.wordcamp.org/files/2018/01/27891754732_b13919cde0_k.jpg') 50% 0% no-repeat;
 	background-size: cover;
 	text-align: center;
 
 	hgroup {
-		padding: 5% 0;
+		padding: 15% 0 0;
 	}
 
 	img {
@@ -25,33 +25,35 @@
 
 .site-title {
 	margin: 3em 0 .5em;
+	background: linear-gradient(transparentize($dark-color, 1), transparentize($dark-color, .05));
+	padding: 1em 0;
 
 	a {
 		display: block;
 		transition: all 200ms;
-		opacity: .95;
 		margin: 0 auto;
-		background: url('//2016.porto.wordcamp.org/files/2016/02/lettring-logo.png');
+		background-image: url('https://github.com/wp-portugal/wcporto2018/site/dist/images/logo-text-white.svg');
 		background-repeat: no-repeat;
-		background-size: 100% auto;
+		background-size: contain;
 		width: 225px;
-		height: 125px;
+		height: 220px;
 		overflow: hidden;
 		text-indent: 100%;
 		white-space: nowrap;
 
 		@media only screen and (min-width: $size-m) {
 			width: 440px;
-			height: 208px;
+			height: 430px;
 
 			&:hover {
-				opacity: .8;
+				opacity: .95;
 			}
 		}
 
 		@media only screen and (min-width: $size-l) {
+			background-image: url('https://github.com/wp-portugal/wcporto2018/site/dist/images/logo-white.svg');
 			width: 550px;
-			height: 250px;
+			height: 320px;
 		}
 	}
 
@@ -102,7 +104,7 @@
 			left: 0;
 			float: left;
 			z-index: 99999;
-			box-shadow: 0 3px 3px rgba(0, 0, 0, .2);
+			box-shadow: 0 3px 3px transparentize($black, .2);
 			background: transparentize($white, .1);
 			padding: .5em 1.125em;
 			width: auto;
@@ -119,9 +121,10 @@
 			a {
 				padding: .75em 0;
 				width: 200px;
+				text-decoration: none;
 				white-space: nowrap;
 
-				&:before {
+				&::before {
 					margin-right: 0;
 					content: '';
 				}
@@ -131,15 +134,15 @@
 		> li {
 			display: inline-block;
 
-			&:first-child a:before {
+			&:first-child a::before {
 				content: '';
 			}
 
 			> a {
 
-				&:before {
+				&::before {
 					margin-right: .75em;
-					color: $color-set-1-3;
+					color: $dark-color-3;
 					content: '|';
 				}
 			}
@@ -149,11 +152,10 @@
 				transition: color 300ms;
 				padding: 1.5em .5em 1.5em 0;
 				text-transform: uppercase;
-				text-decoration: none;
-				color: $color-set-1;
+				color: $dark-color;
 
 				&:hover {
-					color: $color-set-4;
+					color: $bright-color;
 
 					+ .sub-menu {
 						display: block;
@@ -167,20 +169,20 @@
 				> a {
 					padding-right: 2em;
 
-					&:after {
+					&::after {
 						position: absolute;
 						top: 50%;
 						right: 1em;
 						margin-top: -2px;
 						border: 4px solid transparent;
-						border-top-color: $color-set-1;
+						border-top-color: $dark-color;
 						width: 0;
 						height: 0;
 						content: '';
 					}
 
-					&:hover:after {
-						border-top-color: $color-set-4;
+					&:hover::after {
+						border-top-color: $bright-color;
 					}
 				}
 			}
@@ -204,14 +206,13 @@
 		&.current_page_ancestor,
 		&.current-menu-parent {
 			> a {
-				color: $color-set-4;
+				color: $bright-color;
 			}
 		}
 	}
 
 	a {
 		display: block;
-		text-decoration: none;
 	}
 }
 
@@ -235,7 +236,7 @@
 		}
 
 		a {
-			border-top: 1px solid $color-set-3;
+			border-top: 1px solid $bright-color;
 			padding: .75em 1.5em .75em 0;
 		}
 	}
@@ -256,7 +257,7 @@
 
 	a {
 		display: block;
-		border-top: 1px solid $color-set-4;
+		border-top: 1px solid $bright-color;
 		padding: .75em 1.5em;
 	}
 }
@@ -272,7 +273,7 @@
 	padding: 0 2.5em;
 	line-height: 1.5;
 
-	&:after {
+	&::after {
 		display: table;
 		clear: both;
 		content: '';
@@ -281,10 +282,10 @@
 	.nav-previous,
 	.nav-next {
 		a {
-			color: $color-set-1-1;
+			color: $dark-color-1;
 
 			&:hover {
-				color: $color-set-4;
+				color: $bright-color;
 			}
 		}
 	}
@@ -304,11 +305,11 @@
 footer {
 	.entry-meta {
 		margin: 2.25em 0 0;
-		border-top: 1px solid $color-set-3-1;
-		border-bottom: 1px solid $color-set-3-1;
+		border-top: 1px solid $bright-color-1;
+		border-bottom: 1px solid $bright-color-1;
 		padding: .5em 0;
 		line-height: 1.5;
-		color: $color-set-1-2;
+		color: $dark-color-2;
 
 		.sep {
 			margin: 0 .25em;
@@ -326,12 +327,12 @@ footer {
 	.site-info-generator {
 		display: block;
 		transition: all 200ms;
-		background: $color-set-4;
+		background: $bright-color;
 		padding: 1em 0;
 		color: $white;
 
 		&:hover {
-			background: $color-set-1;
+			background: $dark-color;
 		}
 	}
 
@@ -347,12 +348,12 @@ footer {
 		width: 95px;
 		height: 95px;
 		text-decoration: none;
-		color: $color-set-1;
+		color: $dark-color;
 		font-size: .75em;
 		box-sizing: border-box;
 
 		&:hover {
-			color: $color-set-4;
+			color: $bright-color;
 		}
 	}
 }

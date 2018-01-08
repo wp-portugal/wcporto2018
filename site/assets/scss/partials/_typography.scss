@@ -1,10 +1,15 @@
 // Typography
 body {
 	font-family: $font-basic;
-	font-size: 1em;
+	font-size: 16px;
+	font-weight: 300;
 }
 
 h1,
 h2 {
-	font-family: $font-highlight;
+	font-weight: 700;
+}
+
+.en {
+	font-style: italic;
 }

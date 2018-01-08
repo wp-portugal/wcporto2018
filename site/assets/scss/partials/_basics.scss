@@ -1,9 +1,8 @@
 // Basics
 body {
-	background: $color-set-3-2;
 	background-image: url('//2016.porto.wordcamp.org/files/2016/02/d42ba32b.png');
 	background-size: 250px;
-	color: $color-set-1;
+	color: $dark-color;
 }
 
 #page {
@@ -17,10 +16,11 @@ img {
 
 a {
 	text-decoration: none;
-	color: $color-set-1-1;
+	color: $dark-color-1;
 
 	&:hover {
-		color: $color-set-4;
+		text-decoration: underline;
+		color: $bright-color;
 	}
 }
 
