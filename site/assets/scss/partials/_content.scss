@@ -187,7 +187,6 @@ article {
 	font-size: 2.5em;
 
 	a {
-		transition: all 300ms;
 		color: inherit;
 
 		&:hover {
@@ -201,7 +200,6 @@ article {
 		font-weight: 300;
 
 		a {
-			transition: color 300ms;
 			color: $bright-color-1;
 
 			&:hover {
@@ -267,7 +265,6 @@ article {
 	}
 
 	a {
-		transition: color 300ms;
 		color: $bright-color;
 
 		&:hover {

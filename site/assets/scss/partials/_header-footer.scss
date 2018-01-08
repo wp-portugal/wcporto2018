@@ -30,7 +30,6 @@
 
 	a {
 		display: block;
-		transition: all 200ms;
 		margin: 0 auto;
 		background-image: url('https://cdn.rawgit.com/wp-portugal/wcporto2018/master/site/dist/images/logo-text-white.svg');
 		background-repeat: no-repeat;
@@ -134,28 +133,35 @@
 		> li {
 			display: inline-block;
 
-			&:first-child a::before {
-				content: '';
+			&::before {
+				float: left;
+				color: $dark-color-3;
+				padding: 2em .5em 2em 0;
+				content: '|';
 			}
 
-			> a {
-
-				&::before {
-					margin-right: .75em;
-					color: $dark-color-3;
-					content: '|';
-				}
+			&:first-child::before {
+				content: '';
 			}
 
 			a {
 				display: block;
-				transition: color 300ms;
+				float: left;
 				padding: 1.5em .5em 1.5em 0;
 				text-transform: uppercase;
 				color: $dark-color;
 
+				em {
+					display: block;
+					color: $dark-color-2;
+				}
+
 				&:hover {
 					color: $bright-color;
+
+					em {
+						color: $bright-color;
+					}
 
 					+ .sub-menu {
 						display: block;

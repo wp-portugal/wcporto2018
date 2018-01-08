@@ -17,6 +17,11 @@ img {
 a {
 	text-decoration: none;
 	color: $dark-color-1;
+	transition: all 200ms;
+
+	em {
+		transition: all 300ms;
+	}
 
 	&:hover {
 		text-decoration: underline;
