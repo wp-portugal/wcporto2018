@@ -1,44 +1,45 @@
 {
-  "name": "wcporto-2016",
+  "name": "wcporto2018",
   "version": "1.0.0",
-  "description": "WordCamp Porto 2016 Stylesheet",
+  "description": "WordCamp Porto 2018 Stylesheet",
   "main": "gulpfile.js",
-  "dependencies": {},
-  "devDependencies": {
-    "gulp": "^3.9.0",
-    "gulp-autoprefixer": "^3.1.0",
-    "gulp-cssnano": "^2.1.0",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-cssnano": "^2.1.2",
     "gulp-livereload": "^3.8.1",
-    "gulp-load-plugins": "^1.2.0",
-    "gulp-notify": "^2.2.0",
-    "gulp-plumber": "^1.0.1",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-notify": "^3.1.0",
+    "gulp-plumber": "^1.2.0",
     "gulp-rename": "^1.2.2",
-    "gulp-sass": "^2.1.1",
-    "gulp-util": "^3.0.7",
-    "gulp-watch": "^4.3.5",
-    "node-normalize-scss": "^1.2.0",
-    "node-sass": "^3.4.2",
-    "npm": "^3.5.3"
+    "gulp-sass": "^3.1.0",
+    "gulp-watch": "^4.3.11",
+    "node-normalize-scss": "^3.0.0",
+    "node-sass": "^4.7.2"
+  },
+  "devDependencies": {
+    "gulp-imagemin": "^4.1.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pereirinha/wcporto-2016.git"
+    "url": "git+https://github.com/wp-portugal/wcporto2018.git"
   },
   "keywords": [
     "WordPress",
     "WordCamp",
     "Porto",
-    "2016",
+    "2018",
     "Stylesheet",
-    "SCSS"
+    "SCSS",
+    "CSS"
   ],
   "author": "Marco Pereirinha",
-  "license": "ISC",
+  "license": "GPL-2.0",
   "bugs": {
-    "url": "https://github.com/pereirinha/wcporto-2016/issues"
+    "url": "https://github.com/wp-portugal/wcporto2018/issues"
   },
-  "homepage": "https://github.com/pereirinha/wcporto-2016#readme"
+  "homepage": "https://github.com/wp-portugal/wcporto2018#readme"
 }
