@@ -1,0 +1,278 @@
+// Widgets
+
+#after-header-widgets {
+	margin: 1.5em auto;
+	max-width: $max-width;
+
+	@media only screen and (min-width: $size-l) {
+		max-width: $max-width-l;
+	}
+
+	&:after {
+		display: table;
+		clear: both;
+		content: '';
+	}
+
+	.widget {
+		float: left;
+		margin: 0 auto 1em;
+		box-sizing: border-box;
+
+		@media only screen and (min-width: $size-m) {
+			width: calc(100% / 4);
+		}
+
+		a {
+			display: block;
+			transition: all 200ms;
+			padding: .25em 0;
+			font-family: $font-highlight;
+			font-size: 2em;
+		}
+
+		span {
+			display: block;
+			margin: .5em;
+			text-align: center;
+			color: $color-set-3-2;
+		}
+
+		&:nth-child(1) {
+			a {
+				background-color: $color-set-1;
+
+				&:hover {
+					background-color: $color-set-4;
+				}
+			}
+		}
+
+		&:nth-child(2) {
+			a {
+				background-color: $color-set-1-1;
+
+				&:hover {
+					background-color: $color-set-4;
+				}
+			}
+		}
+
+		&:nth-child(3) {
+			a {
+				background-color: $color-set-1-2;
+
+				&:hover {
+					background-color: $color-set-4;
+				}
+			}
+		}
+
+		&:nth-child(4) {
+			a {
+				background-color: $color-set-1-3;
+
+				&:hover {
+					background-color: $color-set-4;
+				}
+			}
+		}
+	}
+
+	.textwidget {
+		h4 {
+			margin: 0 0 .75em;
+			font-size: 1.5em;
+		}
+
+		img {
+			display: block;
+			transition: all 300ms;
+			margin: 0 auto;
+			box-shadow: 0 0 12px transparentize($color-set-1-1, .9);
+			cursor: pointer;
+
+			&:hover {
+				// transform: scale(1.05);
+			}
+		}
+
+		p:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+#primary-sidebar {
+	.widget {
+		margin: 0 0 3.5em;
+		background: url('//2016.porto.wordcamp.org/files/2016/02/divider-widget.png') 50% 100% no-repeat;
+		background-size: 2em;
+		padding-bottom: 3.5em;
+	}
+
+	input[type='text'],
+	input[type='email'] {
+		transition: all 300ms;
+		border: 0 none;
+		border-radius: 4px;
+		background: transparentize($white, .2);
+		padding: .5em;
+		width: 100%;
+		box-sizing: border-box;
+
+		&:focus {
+			outline: none;
+			background: $white;
+		}
+	}
+
+	input[type='submit'] {
+		display: block;
+	}
+
+	#subscribe-submit {
+		text-align: center;
+	}
+}
+
+#secondary {
+	padding: 0 1em;
+	box-sizing: border-box;
+
+	@media only screen and (min-width: $size-l) {
+		float: right;
+		width: 30%;
+	}
+}
+
+.widget {
+
+	h4 {
+		background-color: $color-set-1;
+		padding: 1em;
+		text-transform: uppercase;
+		color: $white;
+		font-family: $font-basic;
+		font-weight: 300;
+	}
+
+	p {
+		margin: 0 0 1em;
+		line-height: 1.5;
+	}
+
+	.sponsor-logo {
+		margin: 1em 0;
+		border-left: 3px solid;
+		text-align: center;
+
+		img {
+			width: auto;
+		}
+	}
+
+	.widget-title {
+		margin: 0 0 .75em;
+		border-bottom: 1px solid $color-set-1-2;
+		padding: 0 0 .75em;
+		text-transform: uppercase;
+		font-family: 'Roboto', sans-serif;
+		font-size: 1.125em;
+		font-weight: 700;
+	}
+
+	li {
+		margin: 0 0 .5em;
+		border-bottom: 1px solid $color-set-1-2;
+		padding-bottom: .5em;
+		line-height: 1.5;
+
+		a {
+			transition: color 300ms;
+			text-decoration: none;
+			color: $color-set-1-1;
+
+			&:hover {
+				color: $color-set-4;
+			}
+		}
+	}
+
+	.porto-edicao-especial {
+		h4 {
+			background-color: $color-set-4;
+		}
+
+		img {
+			max-width: 90% !important;
+			max-height: 5em;
+		}
+	}
+
+	.porto-vintage {
+		img {
+			max-width: 80% !important;
+			max-height: 4.5em;
+		}
+	}
+
+	.porto-late-bottled-vintage,
+	.media-partner {
+		img {
+			max-width: 70% !important;
+			max-height: 4em;
+		}
+	}
+
+	.porto-reserva,
+	.after-party-partner {
+		img {
+			max-width: 60% !important;
+			max-height: 3.5em;
+		}
+	}
+
+	.porto-tawny {
+		img {
+			max-width: 50% !important;
+			max-height: 3em;
+		}
+	}
+}
+
+#footer-widgets {
+	margin: 0 auto;
+	padding: 1.125em;
+	max-width: $max-width;
+
+	@media only screen and (min-width: $size-l) {
+		max-width: $max-width-l;
+	}
+
+	&:after {
+		display: table;
+		clear: both;
+		content: '';
+	}
+}
+
+[id^='footer-widget-'] {
+	padding: 1em;
+	box-sizing: border-box;
+
+	@media only screen and (min-width: $size-m) {
+		float: left;
+		width: calc(100% / 3 - 1);
+	}
+}
+
+#footer-widget-4 {
+	padding: 1em;
+	box-sizing: border-box;
+
+	@media only screen and (min-width: $size-m) {
+		clear: both;
+		margin-top: 1em;
+	}
+}

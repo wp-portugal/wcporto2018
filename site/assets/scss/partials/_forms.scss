@@ -1,0 +1,138 @@
+// forms
+.tix_tickets_table {
+	font-size: .9em;
+
+	@media only screen and (min-width: $size-m) {
+		font-size: 1em;
+	}
+}
+
+textarea {
+	max-width: 100%;
+}
+
+input[type='submit'] {
+	transition: all 300ms;
+	margin: 1em auto;
+	border: 0 none;
+	border-radius: .25em;
+	background: $color-set-1;
+	cursor: pointer;
+	padding: .5em 1em;
+	text-transform: uppercase;
+	color: $white;
+	font-size: 1.125em;
+	font-weight: 700;
+}
+
+input[type='submit']:hover {
+	background: $color-set-4;
+	color: $white;
+}
+
+/* =Comments
+----------------------------------------------- */
+.page {
+	.comments-area {
+		display: none;
+	}
+}
+
+.entry-content,
+.comment-content {
+	input[type='text'],
+	input[type='email'],
+	textarea {
+		transition: all 300ms;
+		border: 1px solid $color-set-1-3;
+		border-radius: 4px;
+		background: $color-set-1-4;
+		padding: .5em;
+		width: 100%;
+		box-sizing: border-box;
+
+		&:focus {
+			outline: none;
+			border-color: $color-set-3;
+			background: $color-set-3-2;
+		}
+	}
+
+	.contact-submit {
+		margin: 1em 0;
+		max-width: calc(100% - 1em);
+		text-align: center;
+	}
+}
+
+.comments-area {
+	margin-bottom: 1.75em;
+	border-top: 10px solid $color-set-3;
+	border-radius: 2px;
+	box-shadow: 0 0 12px transparentize($color-set-1-1, .9);
+	background: $white;
+	padding: .5em;
+
+	.comments-title {
+		margin-bottom: 2.25em;
+		line-height: 1.125;
+		font-size: 2.25em;
+	}
+
+	.comment-author {
+		line-height: 1.5;
+
+		.avatar {
+			float: right;
+			border: 3px solid $color-set-4;
+			border-radius: 100%;
+		}
+	}
+
+	.comment-meta {
+		margin: 0 0 1.125em;
+		line-height: 1.5;
+		font-size: .75em;
+	}
+
+	@media only screen and (min-width: $size-m) {
+		padding: 2.5em;
+	}
+}
+
+.commentlist li {
+	margin: 0 0 1.75em;
+	border-bottom: 1px solid $color-set-3-1;
+	padding: 0 0 1.75em;
+
+	li {
+		margin: 1.75em 0 0 1.5em;
+		border-top: 1px solid $color-set-3-1;
+		border-bottom: 0 none;
+		padding: 1.75em 0 0;
+	}
+}
+
+.comment-reply-link {
+	display: inline-block;
+	transition: all 300ms;
+	border: 0 none;
+	border-radius: 4px;
+	background: $color-set-1;
+	cursor: pointer;
+	padding: .5em .75em;
+	text-transform: uppercase;
+	color: $color-set-1-3;
+	font-size: .75em;
+	font-weight: 700;
+
+	&:hover {
+		background: $color-set-4;
+		color: $white;
+	}
+}
+
+.comment-reply-title {
+	margin: 0 0 1em;
+	font-size: 1.75em;
+}
