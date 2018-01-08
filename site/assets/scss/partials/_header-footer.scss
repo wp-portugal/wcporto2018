@@ -32,7 +32,7 @@
 		display: block;
 		transition: all 200ms;
 		margin: 0 auto;
-		background-image: url('https://raw.githubusercontent.com/wp-portugal/wcporto2018/master/site/dist/images/logo-text-white.svg');
+		background-image: url('https://cdn.rawgit.com/wp-portugal/wcporto2018/master/site/dist/images/logo-text-white.svg');
 		background-repeat: no-repeat;
 		background-size: contain;
 		width: 225px;
@@ -51,7 +51,7 @@
 		}
 
 		@media only screen and (min-width: $size-l) {
-			background-image: url('https://raw.githubusercontent.com/wp-portugal/wcporto2018/master/site/dist/images/logo-white.svg');
+			background-image: url('https://cdn.rawgit.com/wp-portugal/wcporto2018/master/site/dist/images/logo-white.svg');
 			width: 550px;
 			height: 320px;
 		}
