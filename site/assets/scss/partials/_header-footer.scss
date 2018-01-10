@@ -50,9 +50,24 @@
 		}
 
 		@media only screen and (min-width: $size-l) {
-			background-image: url('https://cdn.rawgit.com/wp-portugal/wcporto2018/master/site/dist/images/logo-white.svg');
+			position: relative;
+			background-position: left center;
 			width: 550px;
-			height: 320px;
+			height: 270px;
+			overflow: visible;
+
+			&::after {
+				display: block;
+				position: absolute;
+				right: 0;
+				bottom: 0;
+				background-image: url('https://raw.githubusercontent.com/wp-portugal/wcporto2018/master/site/dist/images/logo-simple-white.svg?sanitize=true');
+				background-repeat: no-repeat;
+				background-size: contain;
+				width: 310px;
+				height: 320px;
+				content: '';
+			}
 		}
 	}
 
