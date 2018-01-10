@@ -470,7 +470,7 @@ h2 {
   .site-title a {
     display: block;
     margin: 0 auto;
-    background-image: url("https://cdn.rawgit.com/wp-portugal/wcporto2018/master/site/dist/images/logo-text-white.svg");
+    background-image: url("https://raw.githubusercontent.com/wp-portugal/wcporto2018/master/site/dist/images/logo-text-white.svg?sanitize=true");
     background-repeat: no-repeat;
     background-size: contain;
     width: 225px;
@@ -1165,7 +1165,7 @@ article.post, article.page {
 
 #primary-sidebar .widget {
   margin: 0 0 3.5em;
-  background: url("https://cdn.rawgit.com/wp-portugal/wcporto2018/master/site/dist/images/logo-simple-color.svg") 50% 100% no-repeat;
+  background: url("https://raw.githubusercontent.com/wp-portugal/wcporto2018/master/site/dist/images/logo-simple-color.svg?sanitize=true") 50% 100% no-repeat;
   background-size: 2em;
   padding-bottom: 3.5em; }
 
