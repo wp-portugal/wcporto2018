@@ -396,6 +396,26 @@ template {
 [hidden] {
   display: none; }
 
+@-webkit-keyframes float {
+  25% {
+    -webkit-transform: translatey(-10px) rotate(-5deg);
+            transform: translatey(-10px) rotate(-5deg); }
+  75% {
+    -webkit-transform: translatey(-15px) rotate(5deg);
+            transform: translatey(-15px) rotate(5deg); } }
+
+@keyframes float {
+  25% {
+    -webkit-transform: translatey(-10px) rotate(-5deg);
+            transform: translatey(-10px) rotate(-5deg); }
+  75% {
+    -webkit-transform: translatey(-15px) rotate(5deg);
+            transform: translatey(-15px) rotate(5deg); } }
+
+.site-title a::after {
+  -webkit-animation: float 20s ease-in-out infinite;
+          animation: float 20s ease-in-out infinite; }
+
 /* =Responsive break points
 ----------------------------------------------- */
 /* =Responsive dimensions
@@ -486,9 +506,22 @@ h2 {
           opacity: .95; } }
     @media only screen and (min-width: 1024px) {
       .site-title a {
-        background-image: url("https://cdn.rawgit.com/wp-portugal/wcporto2018/master/site/dist/images/logo-white.svg");
+        position: relative;
+        background-position: left center;
         width: 550px;
-        height: 320px; } }
+        height: 270px;
+        overflow: visible; }
+        .site-title a::after {
+          display: block;
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          background-image: url("https://raw.githubusercontent.com/wp-portugal/wcporto2018/master/site/dist/images/logo-simple-white.svg?sanitize=true");
+          background-repeat: no-repeat;
+          background-size: contain;
+          width: 310px;
+          height: 320px;
+          content: ''; } }
   @media only screen and (min-width: 768px) {
     .site-title {
       margin: .5em 0; } }
@@ -830,7 +863,7 @@ article.post, article.page {
     position: absolute;
     bottom: -1em;
     left: calc(50% - 2.5em);
-    background-image: url("https://cdn.rawgit.com/wp-portugal/wcporto2018/master/site/dist/images/logo-simple-color.svg");
+    background-image: url("https://raw.githubusercontent.com//wp-portugal/wcporto2018/master/site/dist/images/logo-simple-color.svg?sanitize=true");
     background-repeat: no-repeat;
     background-size: contain;
     width: 5em;
@@ -974,7 +1007,7 @@ article.post, article.page {
   margin-top: 2rem;
   margin-left: -1rem;
   border-left: 5px solid #c90;
-  padding-left: 1rem;
+  padding-left: calc(1rem - 5px);
   color: #335c85; }
 
 /* =Organizers
@@ -1265,6 +1298,7 @@ article.post, article.page {
 
 #footer-widgets {
   margin: 0 auto;
+  padding: 1.5em 0;
   max-width: 95%; }
   #footer-widgets::after {
     display: table;
@@ -1278,10 +1312,12 @@ article.post, article.page {
   padding: 1em;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
+  [id^='footer-widget-'] .en {
+    margin-top: 1em; }
   @media only screen and (min-width: 768px) {
     [id^='footer-widget-'] {
       float: left;
-      width: calc(100% / 3 - 1); } }
+      width: 50%; } }
 
 #footer-widget-4 {
   padding: 1em;
