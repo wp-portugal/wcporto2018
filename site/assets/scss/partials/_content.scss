@@ -327,7 +327,7 @@ article {
 	margin-top: 2rem;
 	margin-left: -1rem;
 	border-left: 5px solid $bright-color;
-	padding-left: 1rem;
+	padding-left: calc(1rem - 5px);
 	color: $dark-color-1;
 }
 
