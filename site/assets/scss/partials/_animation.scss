@@ -1,0 +1,13 @@
+@keyframes float {
+	25% {
+		transform: translatey(-10px) rotate(-5deg);
+	}
+
+	75% {
+		transform: translatey(-15px) rotate(5deg);
+	}
+}
+
+.site-title a::after {
+	animation: float 20s ease-in-out infinite;
+}
