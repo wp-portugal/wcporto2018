@@ -1,8 +1,12 @@
 .tix_tickets_table {
 	th {
-		padding-left: 1em;
+		padding: 0 0 0 1em;
 		text-align: left;
 	}
+}
+
+.tix-ticket-title {
+	display: block;
 }
 
 .tix-column-description {
