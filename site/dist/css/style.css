@@ -1447,3 +1447,15 @@ input[type='submit']:hover {
 .comment-reply-title {
   margin: 0 0 1em;
   font-size: 1.75em; }
+
+.tix_tickets_table th {
+  padding-left: 1em;
+  text-align: left; }
+
+.tix-column-description {
+  padding: 2em 1em; }
+
+.tix-column-price,
+.tix-column-remaining,
+.tix-column-quantity {
+  text-align: right; }
