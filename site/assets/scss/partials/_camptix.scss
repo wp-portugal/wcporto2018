@@ -18,3 +18,35 @@
 .tix-column-quantity {
 	text-align: right;
 }
+
+.tix-attendee-form {
+	width: 100%;
+
+	th[colspan="2"] {
+		padding: 3em 0 2em;
+	}
+
+	td {
+		display: block;
+		clear: both;
+		width: 100%;
+
+		input,
+		textarea {
+			width: 100%;
+		}
+
+		&.tix-left,
+		&.tix-right {
+			width: 100%;
+		}
+
+		&.tix-left {
+			padding-bottom: .5em;
+		}
+
+		&.tix-right {
+			padding-bottom: 2em;
+		}
+	}
+}
