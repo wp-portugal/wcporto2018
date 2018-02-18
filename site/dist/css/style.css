@@ -471,7 +471,7 @@ h2 {
   border-top: 0.5em solid #335c85;
   -webkit-box-shadow: inset 0 10px 60px rgba(51, 92, 133, 0.5);
           box-shadow: inset 0 10px 60px rgba(51, 92, 133, 0.5);
-  background: #335c85 url("https://2018.porto.wordcamp.org/files/2018/01/27891754732_b13919cde0_k.jpg") 50% 0% no-repeat;
+  background: #335c85 url("https://2018.porto.wordcamp.org/files/2018/02/27891754732_b13919cde0_k.jpg") 50% 0% no-repeat;
   background-size: cover;
   text-align: center; }
   .site-header hgroup {
@@ -1480,3 +1480,6 @@ input[type='submit']:hover {
       padding-bottom: .5em; }
     .tix-attendee-form td.tix-right {
       padding-bottom: 2em; }
+
+.tix-row-total td {
+  text-align: right; }
