@@ -1462,3 +1462,21 @@ input[type='submit']:hover {
 .tix-column-remaining,
 .tix-column-quantity {
   text-align: right; }
+
+.tix-attendee-form {
+  width: 100%; }
+  .tix-attendee-form th[colspan="2"] {
+    padding: 3em 0 2em; }
+  .tix-attendee-form td {
+    display: block;
+    clear: both;
+    width: 100%; }
+    .tix-attendee-form td input,
+    .tix-attendee-form td textarea {
+      width: 100%; }
+    .tix-attendee-form td.tix-left, .tix-attendee-form td.tix-right {
+      width: 100%; }
+    .tix-attendee-form td.tix-left {
+      padding-bottom: .5em; }
+    .tix-attendee-form td.tix-right {
+      padding-bottom: 2em; }
