@@ -31,7 +31,7 @@
 		clear: both;
 		width: 100%;
 
-		input,
+		input:not([type="checkbox"]),
 		textarea {
 			width: 100%;
 		}
