@@ -1448,6 +1448,11 @@ input[type='submit']:hover {
   margin: 0 0 1em;
   font-size: 1.75em; }
 
+.tix-ticket-form {
+  width: 100%; }
+  .tix-ticket-form tbody td {
+    padding: 1em 0; }
+
 .tix_tickets_table th {
   padding: 0 0 0 1em;
   text-align: left; }
