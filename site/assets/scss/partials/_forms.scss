@@ -11,6 +11,12 @@ textarea {
 	max-width: 100%;
 }
 
+.button {
+	float: left;
+	margin: 3em auto 5em;
+	color: $white;
+}
+
 .button,
 input[type='submit'] {
 	transition: all 300ms;
