@@ -905,6 +905,7 @@ article.post, article.page {
 .comment-content p,
 .entry-content address {
   margin: 0 0 1em;
+  overflow: hidden;
   line-height: 1.5; }
 
 .entry-content h1,
@@ -1334,6 +1335,11 @@ article.post, article.page {
 
 textarea {
   max-width: 100%; }
+
+.button {
+  float: left;
+  margin: 3em auto 5em;
+  color: #fff; }
 
 .button,
 input[type='submit'] {
