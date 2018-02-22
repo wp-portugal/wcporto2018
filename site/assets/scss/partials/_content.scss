@@ -271,6 +271,16 @@ article {
 		&:hover {
 			color: $dark-color-1;
 		}
+
+		&.button {
+			float: left;
+			margin: 3em auto 5em;
+			color: $white;
+
+			&:hover {
+				color: $white;
+			}
+		}
 	}
 
 	strong {
