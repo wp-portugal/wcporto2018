@@ -953,6 +953,14 @@ article.post, article.page {
   .entry-content a:hover,
   .comment-content a:hover {
     color: #335c85; }
+  .entry-content a.button,
+  .comment-content a.button {
+    float: left;
+    margin: 3em auto 5em;
+    color: #fff; }
+    .entry-content a.button:hover,
+    .comment-content a.button:hover {
+      color: #fff; }
 
 .entry-content strong,
 .comment-content strong {
@@ -1335,11 +1343,6 @@ article.post, article.page {
 
 textarea {
   max-width: 100%; }
-
-.button {
-  float: left;
-  margin: 3em auto 5em;
-  color: #fff; }
 
 .button,
 input[type='submit'] {
