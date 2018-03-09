@@ -1,11 +1,24 @@
 /* =Sponsors
 ----------------------------------------------- */
-.wcorg-sponsors {
-	h3 {
+.wcb_widget_sponsors {
+	h1 {
 		display: none;
 	}
 
-	.wcorg-sponsor-level-porto-edicao-especial {
+	.sponsor-logo {
+		margin: 1em 0;
+		border-left: 3px solid;
+		text-align: center;
+		padding-bottom: 0;
+
+		img {
+			width: auto;
+		}
+	}
+}
+
+.sponsor-level {
+	.porto-edicao-especial-port-special-edition {
 		img {
 			max-width: 90%;
 			max-height: 3em;
@@ -17,10 +30,10 @@
 		}
 	}
 
-	.wcorg-sponsor-level-porto-vintage {
+	.porto-vintage-vintage-port {
 		img {
 			max-width: 80%;
-			max-height: 2.5em;
+			max-height: 2.75em;
 
 			@media only screen and (min-width: $size-m) {
 				max-width: 12.5em;
@@ -29,7 +42,7 @@
 		}
 	}
 
-	.wcorg-sponsor-level-porto-late-bottled-vintage {
+	.porto-late-bottled-vintage-porto-late-bottled-vintage {
 		img {
 			max-width: 70%;
 			max-height: 2.25em;
@@ -41,7 +54,7 @@
 		}
 	}
 
-	.wcorg-sponsor-level-porto-reserva,
+	.porto-reserva-port-reserve,
 	.wcorg-sponsor-level-media-partner {
 		img {
 			max-width: 60%;
@@ -54,7 +67,7 @@
 		}
 	}
 
-	.wcorg-sponsor-level-porto-tawny,
+	.port-tawny-port-tawny,
 	.wcorg-sponsor-level-after-party-partner {
 		img {
 			max-width: 50%;
