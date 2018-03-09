@@ -1437,14 +1437,6 @@ input[type='submit'] {
 .wcb_widget_sponsors h1 {
   display: none; }
 
-.wcb_widget_sponsors .sponsor-logo {
-  margin: 1em 0;
-  border-left: 3px solid;
-  text-align: center;
-  padding-bottom: 0; }
-  .wcb_widget_sponsors .sponsor-logo img {
-    width: auto; }
-
 .wcb_widget_sponsors .porto-edicao-especial-port-special-edition img {
   max-width: 90%;
   max-height: 3em; }
