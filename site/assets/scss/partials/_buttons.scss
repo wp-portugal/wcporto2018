@@ -1,0 +1,26 @@
+.btn-wrapper {
+	display: block;
+	clear: both;
+	width: 100%;
+}
+
+.btn-tickets {
+	display: block;
+	transition: .2s background-color ease-in-out;
+	margin: 1em auto;
+	border: 1px solid $dark-color;
+	border-radius: 3px;
+	background-color: $dark-color;
+	padding: .5em;
+	width: 5em;
+	text-align: center;
+	color: $bright-color;
+	font-size: 2em;
+	font-weight: 700;
+
+	&:hover {
+		background-color: transparent;
+		text-decoration: none;
+		color: $dark-color;
+	}
+}
