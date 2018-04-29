@@ -1089,23 +1089,23 @@ article.post, article.page {
   content: ''; }
 
 #after-header-widgets {
-  margin: 1.5em auto;
-  max-width: 95%; }
-  @media only screen and (min-width: 1024px) {
-    #after-header-widgets {
-      max-width: 60em; } }
+  clear: both;
+  margin: 1.5em auto; }
   #after-header-widgets::after {
     display: table;
     clear: both;
     content: ''; }
+  #after-header-widgets h1 {
+    margin: 0 0 .25em;
+    border: 0;
+    padding: 1em 0 0;
+    text-align: center;
+    text-transform: none;
+    font-size: 2em; }
   #after-header-widgets .widget {
-    float: left;
     margin: 0 auto 1em;
     -webkit-box-sizing: border-box;
             box-sizing: border-box; }
-    @media only screen and (min-width: 768px) {
-      #after-header-widgets .widget {
-        width: calc(100% / 4); } }
     #after-header-widgets .widget a {
       display: block;
       padding: .25em 0;
@@ -1199,7 +1199,6 @@ article.post, article.page {
   border-bottom: 1px solid #8099b3;
   padding: 0 0 .75em;
   text-transform: uppercase;
-  font-family: 'Roboto', sans-serif;
   font-size: 1.125em;
   font-weight: 700; }
 
@@ -1497,3 +1496,44 @@ input[type='submit'] {
   margin: auto;
   padding: 1em 0 2em;
   font-size: 2.25em; }
+
+.speakers-widget {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden; }
+  .speakers-widget a {
+    position: relative;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 300px;
+            flex: 1 1 300px;
+    -webkit-transition: .2s all ease-in-out;
+    transition: .2s all ease-in-out;
+    height: 300px; }
+    .speakers-widget a:hover {
+      width: 300px; }
+      .speakers-widget a:hover img {
+        position: relative;
+        -webkit-filter: grayscale(0);
+                filter: grayscale(0); }
+      .speakers-widget a:hover h3 {
+        bottom: 0; }
+  .speakers-widget img {
+    position: absolute;
+    -webkit-transition: .2s all ease-in-out;
+    transition: .2s all ease-in-out;
+    max-width: none;
+    -webkit-filter: grayscale(95%);
+            filter: grayscale(95%); }
+  .speakers-widget h3 {
+    position: absolute;
+    bottom: -5em;
+    -webkit-transition: .2s all ease-in-out;
+    transition: .2s all ease-in-out;
+    margin: 0;
+    background: #036;
+    padding: .5em 0;
+    width: 100%;
+    text-indent: 1em;
+    color: #c90;
+    font-size: .675em; }
