@@ -1,12 +1,8 @@
 // Widgets
 
 #after-header-widgets {
+	clear: both;
 	margin: 1.5em auto;
-	max-width: $max-width;
-
-	@media only screen and (min-width: $size-l) {
-		max-width: $max-width-l;
-	}
 
 	&::after {
 		display: table;
@@ -14,14 +10,18 @@
 		content: '';
 	}
 
+	h1 {
+		margin: 0 0 .25em;
+		border: 0;
+		padding: 1em 0 0;
+		text-align: center;
+		text-transform: none;
+		font-size: 2em;
+	}
+
 	.widget {
-		float: left;
 		margin: 0 auto 1em;
 		box-sizing: border-box;
-
-		@media only screen and (min-width: $size-m) {
-			width: calc(100% / 4);
-		}
 
 		a {
 			display: block;
@@ -165,7 +165,6 @@
 		border-bottom: 1px solid $dark-color-2;
 		padding: 0 0 .75em;
 		text-transform: uppercase;
-		font-family: 'Roboto', sans-serif;
 		font-size: 1.125em;
 		font-weight: 700;
 	}
