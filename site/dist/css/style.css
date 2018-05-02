@@ -1498,45 +1498,48 @@ input[type='submit'] {
   font-size: 2.25em; }
 
 .speakers-widget {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  overflow: hidden; }
-  .speakers-widget a {
-    position: relative;
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 300px;
-            flex: 1 1 300px;
-    -webkit-transition: .2s all ease-in-out;
-    transition: .2s all ease-in-out;
-    height: 300px; }
-    .speakers-widget a:hover {
-      width: 300px; }
-      .speakers-widget a:hover img {
+  display: none; }
+  @media only screen and (min-width: 1024px) {
+    .speakers-widget {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      overflow: hidden; }
+      .speakers-widget a {
         position: relative;
-        -webkit-filter: grayscale(0);
-                filter: grayscale(0); }
-      .speakers-widget a:hover h3 {
-        bottom: 0; }
-  .speakers-widget img {
-    position: absolute;
-    -webkit-transition: .2s all ease-in-out;
-    transition: .2s all ease-in-out;
-    max-width: none;
-    -webkit-filter: grayscale(95%);
-            filter: grayscale(95%); }
-  .speakers-widget h3 {
-    position: absolute;
-    bottom: -5em;
-    -webkit-transition: .2s all ease-in-out;
-    transition: .2s all ease-in-out;
-    margin: 0;
-    background: #036;
-    padding: .5em 0;
-    width: 100%;
-    text-indent: 1em;
-    color: #c90;
-    font-size: .675em; }
+        -webkit-box-flex: 1;
+            -ms-flex: 1 1 300px;
+                flex: 1 1 300px;
+        -webkit-transition: .2s all ease-in-out;
+        transition: .2s all ease-in-out;
+        height: 300px; }
+        .speakers-widget a:hover {
+          width: 300px; }
+          .speakers-widget a:hover img {
+            position: relative;
+            -webkit-filter: grayscale(0);
+                    filter: grayscale(0); }
+          .speakers-widget a:hover h3 {
+            bottom: 0; }
+      .speakers-widget img {
+        position: absolute;
+        -webkit-transition: .2s all ease-in-out;
+        transition: .2s all ease-in-out;
+        max-width: none;
+        -webkit-filter: grayscale(95%);
+                filter: grayscale(95%); }
+      .speakers-widget h3 {
+        position: absolute;
+        bottom: -5em;
+        -webkit-transition: .2s all ease-in-out;
+        transition: .2s all ease-in-out;
+        margin: 0;
+        background: #036;
+        padding: .5em 0;
+        width: 100%;
+        text-indent: 1em;
+        color: #c90;
+        font-size: .675em; } }
 
 .btn-wrapper {
   display: block;
@@ -1562,5 +1565,5 @@ input[type='submit'] {
     color: #036; }
   @media only screen and (min-width: 768px) {
     .btn-tickets {
-      font-size: 2em;
-      width: 10em; } }
+      width: 12em;
+      font-size: 2em; } }
