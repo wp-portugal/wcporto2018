@@ -1,0 +1,68 @@
+// Schedule
+
+$categories: (
+	comunidade: #FF7FF2,
+	open-source: #C4B6EA,
+	workshop: #EC7505,
+	desenvolvimento: #2D4C59,
+	performance: #1979FF,
+	design: #7C4CFF,
+	ecommerce: #3BEF3B,
+	gutenberg: #5F4D32,
+	rgpd: #700A0A,
+	seguranca: #CC1212,
+	seo: #F7FF26,
+	marketing: #A89421,
+	negocio: #B0F709
+);
+
+.wcpt-schedule {
+	width: 100%;
+
+	tbody {
+		tr {
+			&:nth-of-type(odd) {
+				background: #fafafa;
+			}
+		}
+
+		td {
+			padding: 1em;
+		}
+	}
+
+	a {
+		display: block;
+	}
+}
+
+.wcpt-col-time {
+	width: 100px;
+}
+
+.wcpt-session-speakers {
+	font-size: .8em;
+
+	a {
+		display: initial;
+		color: $dark-color-2;
+	}
+
+	&::before {
+		content: '';
+	}
+}
+
+@each $className,$color in $categories{
+	.wcb-session-category-#{$className} {
+		&::after {
+			display: block;
+			content: '';
+			width: 20px;
+			height: 20px;
+			background-color: #{$color};
+			border-radius: 10px;
+			margin: 1em 0;
+		}
+	}
+}

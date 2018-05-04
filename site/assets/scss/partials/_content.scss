@@ -425,34 +425,3 @@ article {
 	left: 0 !important;
 	width: calc(100% - 10px);
 }
-
-/* =Schedule
------------------------------------------------ */
-.wcpt-schedule {
-	width: 100%;
-
-	tbody {
-		tr {
-			&:nth-of-type(odd) {
-				background: #fafafa;
-			}
-		}
-
-		td {
-			padding: 1em;
-			text-align: center;
-		}
-	}
-
-	a {
-		display: block;
-	}
-}
-
-.wcpt-col-time {
-	width: 100px;
-}
-
-.wcpt-session-speakers::before {
-	content: '';
-}
