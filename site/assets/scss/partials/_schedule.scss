@@ -1,19 +1,45 @@
 // Schedule
 
 $categories: (
-	comunidade: #FF7FF2,
-	open-source: #C4B6EA,
-	workshop: #EC7505,
-	desenvolvimento: #2D4C59,
-	performance: #1979FF,
-	design: #7C4CFF,
-	ecommerce: #3BEF3B,
-	gutenberg: #5F4D32,
-	rgpd: #700A0A,
-	seguranca: #CC1212,
-	seo: #F7FF26,
-	marketing: #A89421,
-	negocio: #B0F709
+	comunidade: (
+		'Comunidade': #FF7FF2
+	),
+	open-source: (
+		'Open Source': #C4B6EA
+	),
+	workshop: (
+		'Workshop': #EC7505
+	),
+	desenvolvimento: (
+		'Desenvolvimento': #2D4C59
+	),
+	performance: (
+		'Performance': #1979FF
+	),
+	design: (
+		'Design': #7C4CFF
+	),
+	ecommerce: (
+		'Ecommerce': #3BEF3B
+	),
+	gutenberg: (
+		'Gutenberg': #5F4D32
+	),
+	rgpd: (
+		'RGPD': #700A0A
+	),
+	seguranca: (
+		'Segurança': #CC1212
+	),
+	seo: (
+		'SEO': #F7FF26
+	),
+	marketing: (
+		'Marketing': #A89421
+	),
+	negocio: (
+		'Negócio': #B0F70
+	)
 );
 
 .wcpt-schedule {
@@ -53,16 +79,20 @@ $categories: (
 	}
 }
 
-@each $className,$color in $categories{
-	.wcb-session-category-#{$className} {
-		&::after {
-			display: block;
-			content: '';
-			width: 20px;
-			height: 20px;
-			background-color: #{$color};
-			border-radius: 10px;
-			margin: 1em 0;
+@each $class-name,$data in $categories {
+	@each $content,$color in $data {
+		.wcb-session-category-#{$class-name} {
+			&::after {
+				display: block;
+				float: left;
+				margin: 1em auto;
+				border-radius: 2em;
+				background-color: #{$color};
+				padding: .5em .75em;
+				color: $white;
+				font-size: .75em;
+				content: '#{$content}';
+			}
 		}
 	}
 }
