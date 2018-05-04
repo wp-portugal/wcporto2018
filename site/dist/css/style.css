@@ -1070,24 +1070,6 @@ article.post, article.page {
   left: 0 !important;
   width: calc(100% - 10px); }
 
-/* =Schedule
------------------------------------------------ */
-.wcpt-schedule {
-  width: 100%; }
-  .wcpt-schedule tbody tr:nth-of-type(odd) {
-    background: #fafafa; }
-  .wcpt-schedule tbody td {
-    padding: 1em;
-    text-align: center; }
-  .wcpt-schedule a {
-    display: block; }
-
-.wcpt-col-time {
-  width: 100px; }
-
-.wcpt-session-speakers::before {
-  content: ''; }
-
 #after-header-widgets {
   clear: both;
   margin: 1.5em auto; }
@@ -1567,3 +1549,140 @@ input[type='submit'] {
     .btn-tickets {
       width: 12em;
       font-size: 2em; } }
+
+.wcpt-schedule {
+  width: 100%; }
+  .wcpt-schedule tbody tr:nth-of-type(odd) {
+    background: #fafafa; }
+  .wcpt-schedule tbody td {
+    padding: 1em; }
+  .wcpt-schedule a {
+    display: block; }
+
+.wcpt-col-time {
+  width: 100px; }
+
+.wcpt-session-speakers {
+  font-size: .8em; }
+  .wcpt-session-speakers a {
+    display: initial;
+    color: #8099b3; }
+  .wcpt-session-speakers::before {
+    content: ''; }
+
+.wcb-session-category-comunidade::after {
+  display: block;
+  content: '';
+  width: 20px;
+  height: 20px;
+  background-color: #FF7FF2;
+  border-radius: 10px;
+  margin: 1em 0; }
+
+.wcb-session-category-open-source::after {
+  display: block;
+  content: '';
+  width: 20px;
+  height: 20px;
+  background-color: #C4B6EA;
+  border-radius: 10px;
+  margin: 1em 0; }
+
+.wcb-session-category-workshop::after {
+  display: block;
+  content: '';
+  width: 20px;
+  height: 20px;
+  background-color: #EC7505;
+  border-radius: 10px;
+  margin: 1em 0; }
+
+.wcb-session-category-desenvolvimento::after {
+  display: block;
+  content: '';
+  width: 20px;
+  height: 20px;
+  background-color: #2D4C59;
+  border-radius: 10px;
+  margin: 1em 0; }
+
+.wcb-session-category-performance::after {
+  display: block;
+  content: '';
+  width: 20px;
+  height: 20px;
+  background-color: #1979FF;
+  border-radius: 10px;
+  margin: 1em 0; }
+
+.wcb-session-category-design::after {
+  display: block;
+  content: '';
+  width: 20px;
+  height: 20px;
+  background-color: #7C4CFF;
+  border-radius: 10px;
+  margin: 1em 0; }
+
+.wcb-session-category-ecommerce::after {
+  display: block;
+  content: '';
+  width: 20px;
+  height: 20px;
+  background-color: #3BEF3B;
+  border-radius: 10px;
+  margin: 1em 0; }
+
+.wcb-session-category-gutenberg::after {
+  display: block;
+  content: '';
+  width: 20px;
+  height: 20px;
+  background-color: #5F4D32;
+  border-radius: 10px;
+  margin: 1em 0; }
+
+.wcb-session-category-rgpd::after {
+  display: block;
+  content: '';
+  width: 20px;
+  height: 20px;
+  background-color: #700A0A;
+  border-radius: 10px;
+  margin: 1em 0; }
+
+.wcb-session-category-seguranca::after {
+  display: block;
+  content: '';
+  width: 20px;
+  height: 20px;
+  background-color: #CC1212;
+  border-radius: 10px;
+  margin: 1em 0; }
+
+.wcb-session-category-seo::after {
+  display: block;
+  content: '';
+  width: 20px;
+  height: 20px;
+  background-color: #F7FF26;
+  border-radius: 10px;
+  margin: 1em 0; }
+
+.wcb-session-category-marketing::after {
+  display: block;
+  content: '';
+  width: 20px;
+  height: 20px;
+  background-color: #A89421;
+  border-radius: 10px;
+  margin: 1em 0; }
+
+.wcb-session-category-negocio::after {
+  display: block;
+  content: '';
+  width: 20px;
+  height: 20px;
+  background-color: #B0F709;
+  border-radius: 10px;
+  margin: 1em 0; }
