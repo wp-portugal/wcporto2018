@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /******************************************************************
 Site Name: WordCamp Porto 2018
 ******************************************************************/
@@ -1572,117 +1573,143 @@ input[type='submit'] {
 
 .wcb-session-category-comunidade::after {
   display: block;
-  content: '';
-  width: 20px;
-  height: 20px;
+  float: left;
+  margin: 1em auto;
+  border-radius: 2em;
   background-color: #FF7FF2;
-  border-radius: 10px;
-  margin: 1em 0; }
+  padding: .5em .75em;
+  color: #fff;
+  font-size: .75em;
+  content: "Comunidade"; }
 
 .wcb-session-category-open-source::after {
   display: block;
-  content: '';
-  width: 20px;
-  height: 20px;
+  float: left;
+  margin: 1em auto;
+  border-radius: 2em;
   background-color: #C4B6EA;
-  border-radius: 10px;
-  margin: 1em 0; }
+  padding: .5em .75em;
+  color: #fff;
+  font-size: .75em;
+  content: "Open Source"; }
 
 .wcb-session-category-workshop::after {
   display: block;
-  content: '';
-  width: 20px;
-  height: 20px;
+  float: left;
+  margin: 1em auto;
+  border-radius: 2em;
   background-color: #EC7505;
-  border-radius: 10px;
-  margin: 1em 0; }
+  padding: .5em .75em;
+  color: #fff;
+  font-size: .75em;
+  content: "Workshop"; }
 
 .wcb-session-category-desenvolvimento::after {
   display: block;
-  content: '';
-  width: 20px;
-  height: 20px;
+  float: left;
+  margin: 1em auto;
+  border-radius: 2em;
   background-color: #2D4C59;
-  border-radius: 10px;
-  margin: 1em 0; }
+  padding: .5em .75em;
+  color: #fff;
+  font-size: .75em;
+  content: "Desenvolvimento"; }
 
 .wcb-session-category-performance::after {
   display: block;
-  content: '';
-  width: 20px;
-  height: 20px;
+  float: left;
+  margin: 1em auto;
+  border-radius: 2em;
   background-color: #1979FF;
-  border-radius: 10px;
-  margin: 1em 0; }
+  padding: .5em .75em;
+  color: #fff;
+  font-size: .75em;
+  content: "Performance"; }
 
 .wcb-session-category-design::after {
   display: block;
-  content: '';
-  width: 20px;
-  height: 20px;
+  float: left;
+  margin: 1em auto;
+  border-radius: 2em;
   background-color: #7C4CFF;
-  border-radius: 10px;
-  margin: 1em 0; }
+  padding: .5em .75em;
+  color: #fff;
+  font-size: .75em;
+  content: "Design"; }
 
 .wcb-session-category-ecommerce::after {
   display: block;
-  content: '';
-  width: 20px;
-  height: 20px;
+  float: left;
+  margin: 1em auto;
+  border-radius: 2em;
   background-color: #3BEF3B;
-  border-radius: 10px;
-  margin: 1em 0; }
+  padding: .5em .75em;
+  color: #fff;
+  font-size: .75em;
+  content: "Ecommerce"; }
 
 .wcb-session-category-gutenberg::after {
   display: block;
-  content: '';
-  width: 20px;
-  height: 20px;
+  float: left;
+  margin: 1em auto;
+  border-radius: 2em;
   background-color: #5F4D32;
-  border-radius: 10px;
-  margin: 1em 0; }
+  padding: .5em .75em;
+  color: #fff;
+  font-size: .75em;
+  content: "Gutenberg"; }
 
 .wcb-session-category-rgpd::after {
   display: block;
-  content: '';
-  width: 20px;
-  height: 20px;
+  float: left;
+  margin: 1em auto;
+  border-radius: 2em;
   background-color: #700A0A;
-  border-radius: 10px;
-  margin: 1em 0; }
+  padding: .5em .75em;
+  color: #fff;
+  font-size: .75em;
+  content: "RGPD"; }
 
 .wcb-session-category-seguranca::after {
   display: block;
-  content: '';
-  width: 20px;
-  height: 20px;
+  float: left;
+  margin: 1em auto;
+  border-radius: 2em;
   background-color: #CC1212;
-  border-radius: 10px;
-  margin: 1em 0; }
+  padding: .5em .75em;
+  color: #fff;
+  font-size: .75em;
+  content: "Segurança"; }
 
 .wcb-session-category-seo::after {
   display: block;
-  content: '';
-  width: 20px;
-  height: 20px;
+  float: left;
+  margin: 1em auto;
+  border-radius: 2em;
   background-color: #F7FF26;
-  border-radius: 10px;
-  margin: 1em 0; }
+  padding: .5em .75em;
+  color: #fff;
+  font-size: .75em;
+  content: "SEO"; }
 
 .wcb-session-category-marketing::after {
   display: block;
-  content: '';
-  width: 20px;
-  height: 20px;
+  float: left;
+  margin: 1em auto;
+  border-radius: 2em;
   background-color: #A89421;
-  border-radius: 10px;
-  margin: 1em 0; }
+  padding: .5em .75em;
+  color: #fff;
+  font-size: .75em;
+  content: "Marketing"; }
 
 .wcb-session-category-negocio::after {
   display: block;
-  content: '';
-  width: 20px;
-  height: 20px;
-  background-color: #B0F709;
-  border-radius: 10px;
-  margin: 1em 0; }
+  float: left;
+  margin: 1em auto;
+  border-radius: 2em;
+  background-color: #B0F70;
+  padding: .5em .75em;
+  color: #fff;
+  font-size: .75em;
+  content: "Negócio"; }
