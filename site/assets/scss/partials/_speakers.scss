@@ -1,48 +1,38 @@
+.wcb_speaker,
+.wcorg-speaker {
+	border-bottom: 1px solid $dark-color;
+	padding-bottom: 2em;
+
+	h3 {
+		font-size: 1.25em;
+	}
+}
+
 .speakers-widget {
 	display: none;
 
 	@media only screen and (min-width: $size-l) {
 		display: flex;
+		flex-wrap: wrap;
 		overflow: hidden;
 
 		a {
-			position: relative;
-			flex: 1 1 300px;
+			flex: 1 1 7%;
 			transition: .2s all ease-in-out;
-			height: 300px;
 
 			&:hover {
-				width: 300px;
 
 				img {
-					position: relative;
 					filter: grayscale(0);
-				}
-
-				h3 {
-					bottom: 0;
 				}
 			}
 		}
 
 		img {
-			position: absolute;
 			transition: .2s all ease-in-out;
+			width: 100%;
 			max-width: none;
 			filter: grayscale(95%);
-		}
-
-		h3 {
-			position: absolute;
-			bottom: -5em;
-			transition: .2s all ease-in-out;
-			margin: 0;
-			background: $dark-color;
-			padding: .5em 0;
-			width: 100%;
-			text-indent: 1em;
-			color: $bright-color;
-			font-size: .675em;
 		}
 	}
 }
