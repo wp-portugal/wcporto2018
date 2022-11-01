@@ -4,7 +4,7 @@
   "description": "WordCamp Porto 2018 Stylesheet",
   "main": "gulpfile.js",
   "dependencies": {
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-autoprefixer": "^4.1.0",
     "gulp-cssnano": "^2.1.2",
     "gulp-livereload": "^3.8.1",
